@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Travel.co</title>
+</head>
+
+<body>
+    <!-- HEADER SECTION  -->
+    <header>
+        <div class="max-width">
+            <nav class="navbar">
+                <div class="logo"><a href="index.html">Travel.co</a></div>
+                <div class="nav-list" id="navList">
+                    <ul>
+                        <i class="fas fa-times" onclick="hideMenu()"></i>
+                        <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">ABOUT</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">BLOG</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION  -->
+    <section class="hero">
+        <div class="max-width">
+            <div class="text-box" data-aos="fade-up" data-aos-anchor-placement="center-center">
+                <h1 class="headline">Travel</h1>
+                <p class="detail">Here are my favorite travel and adventure <br>quotes, paired with images from my
+                    <br>journeys
+                    around the world.
+                </p>
+                <a href="" class="hero-btn">read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CITIES SECTION  -->
+    <section class="cities">
+        <div class="max-width">
+            <h2 class="title">Start Your Journey</h2>
+            <p class="rider">The most searched countries in March</p>
+            <div class="grid">
+                <div class="card" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./assets/image/city-1.jpeg">
+                    <div class="name"><span><i class="fas fa-map-marker-alt"></i></span> Santorini, Greece</div>
+                </div>
+                <div class="card" data-aos="fade-right" data-aos-duration="2000">
+                    <img src="./assets/image/city-2.jpeg">
+                    <div class="name"><span><i class="fas fa-map-marker-alt"></i></span> Vernazza, Italy</div>
+                </div>
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="./assets/image/city-3.jpeg">
+                    <div class="name"><span><i class="fas fa-map-marker-alt"></i></span> San Francisco</div>
+                </div>
+                <div class="card" data-aos="fade-left" data-aos-duration="3000">
+                    <img src="./assets/image/city-4.jpeg">
+                    <div class="name"><span><i class="fas fa-map-marker-alt"></i></span> Navagio, Greece</div>
+                </div>
+                <div class="card" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="./assets/image/city-5.jpeg">
+                    <div class="name"><span><i class="fas fa-map-marker-alt"></i></span> Ao Nang, Thailand</div>
+                </div>
+                <div class="card" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./assets/image/city-6.jpeg">
+                    <div class="name"><span><i class="fas fa-map-marker-alt"></i></span> Phi Phi Islands, Thailand</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NAVIGATION SECTION  -->
+    <section class="navigation">
+        <div class="max-width">
+            <div class="content">
+                <div class="list-1">
+                    <h3>Browse Tours By Activity</h3>
+                    <ul>
+                        <li><a href="">Outdoor Activites</a></li>
+                        <li><a href="">Cultural & Thematic Tours</a></li>
+                        <li><a href="">Family Friendly Tours</a></li>
+                        <li><a href="">Holiday & Seasonal Tours</a></li>
+                    </ul>
+                </div>
+                <div class="list-2">
+                    <ul>
+                        <li><a href="">City Tours</a></li>
+                        <li><a href="">Indulgence & Luxury Tours</a></li>
+                        <li><a href="">Relaxation Tours</a></li>
+                        <li><a href="">Wild & Adventure Tours</a></li>
+                    </ul>
+                </div>
+                <div class="search-box">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates & promotions</p>
+                    <form action="">
+                        <input type="email" name="email" id="email" placeholder="Enter a valid email address" required>
+                        <input type="button" value="Submit" class="submit-btn">
+                    </form>
+                    <div class="media-icons">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a href=""><i class="fab fa-google-plus-g"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCOUNT SECTION  -->
+    <section class="discount">
+        <div class="max-width">
+            <div class="text-box" data-aos="fade-left">
+                <h3>Discount 10-30% Off</h3>
+                <p>Curabitur blandit tempus porttitor. Maecenas faucibus mollis interdum. Duis
+                    mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                </p>
+                <a href="" class="d-btn">see tours</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION  -->
+    <section class="choose-us">
+        <div class="max-width">
+            <h2 class="title">Why Choose Us</h2>
+            <p class="rider">The gladdest moment in human life, me thinks, is a departure into unknown lands.</p>
+            <div class="grid-box">
+                <div class="left" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="./assets/image/img-1.jpeg">
+                </div>
+                <div class="right">
+                    <div class="card img-1" data-aos="flip-left"><img src="./assets/image/img-2.jpeg"></div>
+                    <div class="card description">
+                        <i class="fas fa-globe"></i>
+                        <h3>Passionate Travel</h3>
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia </p>
+                    </div>
+                    <div class="card description">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Beautiful Places</h3>
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia </p>
+                    </div>
+                    <div class="card img-2" data-aos="flip-left"><img src="./assets/image/img-3.jpeg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer>
+        <div class="max-width">
+            <div class="content">
+                <div class="title"><a href="index.html">Travel.co</a></div>
+                <div class="media-icons">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>Travel makes one modest. You see what a tiny place you occupy in the world.</p>
+                <div class="division">
+                    <div class="copy-r">&copy; 2021 Travel.co. All right reserved.</div>
+                    <div>Built with <i class="far fa-heart"></i> by <a href="https://github.com/umarsalihu99">Umar Salihu</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+    
+    <!-- ANIMATION  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 200,
+            duration: 1200,
+            once: false,
+        });
+    </script>
+</body>
+
+</html>

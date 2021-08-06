@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #E9F2FA;
+    --white-color: #FFF; 
+    --main-color: #478AC9;
+    --secondary-color: #4c7397;
+    --dark-gray: #111827;
+    --light-gray: #999999;
+    --footer-color: #292e33;
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font:'Open Sans', sans-serif;
+}
+
+html {
+    font-family: var(--main-font);
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-color);
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.max-width {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+
+/* HEADER SECTION  */
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-image: transparent;
+}
+
+.navbar {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+.nav-list {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar .nav-list .nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .nav-list .nav-item .nav-link {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--white-color);
+    letter-spacing: 2px;
+    padding: 0 0.5rem;
+}
+
+.navbar .fas {
+    display: none;
+}
+
+/* HERO SECTION  */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: url("./assets/image/banner.jpeg") center no-repeat;
+    background-size: cover;
+}
+
+.hero .text-box {
+    width: 90%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: translate(-50% -50%);
+}
+
+.hero .text-box .headline {
+    font-size: 5.625rem;
+    font-weight: 400;
+    color: var(--white-color);
+    padding-bottom: 1.5rem;
+}
+
+.hero .text-box .detail {
+    font-size: 1.25rem;
+    color: var(--white-color);
+    line-height: 1.6;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.hero .text-box .hero-btn {
+    display: inline-block;
+    color: var(--white-color);
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-image: linear-gradient(135deg, #478ac9, #24d9ea);
+    transition: .5s ease;
+}
+
+.hero .text-box .hero-btn:hover {
+    border: 1px solid #24d9ea;
+}
+
+/* CITIES SECTION  */
+.cities {
+    padding: 4rem 0;
+}
+
+.cities .title {
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.cities .rider {
+    font-size: 1.125rem;;
+    color: var(--secondary-color);
+    font-style: italic;
+    text-align: center;
+}
+
+.cities .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 5rem;
+}
+
+.cities .grid .card {
+    max-width: 100%;
+    width: 100%;
+    height: 372px;
+    background: var(--white-color);
+    cursor: pointer;
+    transition: all .5s ease; 
+}
+
+.cities .grid .card:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.cities .grid .card img {
+    width: 100%;
+    height: 80%;
+}
+
+.cities .grid .card .name {
+    font-size: 1.25rem;
+    color: var(--dark-gray);
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    font-style: italic;
+}
+.cities .grid .card .name span {
+    color: var(--light-gray);
+    padding-right: 10px;
+}
+
+.navigation {
+    min-height: 60vh;
+    padding: 3rem 0;
+    background: var(--white-color);
+}
+
+.navigation .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.navigation .content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--main-font);
+    color: var(--dark-gray);
+    padding: 1.5rem 0;
+}
+
+.navigation .content ul li {
+    padding: 0.8rem 0;
+}
+
+.navigation .content ul li a {
+    color: var(--main-color);
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+}
+
+.navigation .content .list-2 {
+    margin-top: 5rem;
+}
+
+.navigation .content .search-box p {
+    font-size: 1rem;
+    color: var(--light-gray);
+    font-family: var(--secondary-font);
+    padding-bottom: 2.5rem;
+}
+
+.navigation .content .search-box input[type=email] {
+    width: 53%;
+    height: auto;
+    padding: 10px 12px;
+    border-radius: 10px;
+    outline-color: var(--main-color);
+    border: none;
+    background-color: #f2f2f2;
+    color: var(--dark-gray);
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.navigation .content .search-box input[type=email]::placeholder {
+    font-size: 12px;
+    color: var(--light-gray);
+    font-family: var(--secondary-font);
+}
+
+.navigation .content .search-box input[type=button] {
+    width: 25%;
+    padding: 10px 12px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    font-size: 1rem;
+    color: var(--white-color);
+    transition: .5s ease;
+}
+
+.navigation .content .search-box input[type=button]:hover {
+    opacity: 0.8;
+}
+
+.navigation .content .media-icons {
+    padding-top: 2rem;
+}
+
+.navigation .content .media-icons a {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--light-gray);
+    padding-right: 1rem;
+}
+
+/* DISCOUNT SECTION  */
+.discount {
+    position: relative;
+    height: 75vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(./assets/image/showcase.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.discount .text-box {
+    position: absolute;
+    top: 33%;
+    right: 12%;
+    transform: translate(-50% -50%);
+    text-align: right;
+    width: 52%;
+}
+
+.discount .text-box h3 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-family: var(--main-font);
+    color: var(--white-color);
+    padding-bottom: 1.5rem;
+}
+
+.discount .text-box p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    letter-spacing: 1px;
+    color: var(--white-color);
+    line-height: 1.6;
+}
+
+.discount .text-box .d-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    margin-top: 2rem;
+    transition: all 1s ease;
+}
+
+.discount .text-box .d-btn:hover {
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+
+/* WHY CHOOSE US  */
+.choose-us {
+    min-height: 100vh;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.choose-us .title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--dark-gray);
+    padding-bottom: 1rem;
+}
+
+.choose-us .rider {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--dark-gray);
+}
+
+.choose-us .grid-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-top: 5rem;
+}
+
+.choose-us .grid-box .right {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.choose-us .grid-box .right i {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    padding-bottom: 2rem;
+}
+
+.choose-us .grid-box .right h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+
+.choose-us .grid-box .right p {
+    font-size: 0.87rem;
+    font-style: italic;
+}
+
+.choose-us .grid-box .right .description {
+    background: var(--white-color);
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* FOOTER  */
+footer {
+    min-height: 45vh;
+    background: var(--footer-color);
+    color: var(--white-color);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .content .title {
+    padding-bottom: 2rem;
+}
+
+footer .content .title a {
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+footer .content .media-icons a {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 0 0.5rem;
+}
+
+footer p {
+    font-style: italic;
+    padding: 2rem 0;
+}
+
+footer .division {
+    border-top: 1px solid var(--light-gray);
+    color: var(--light-gray);
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+footer .division a {
+    color: var(--secondary-color);
+}
+
+footer .division i {
+    color: var(--light-gray);
+}
+
+/* RESPONSIVE MEDIA QUERIES  */
+@media (max-width: 500px) {
+    .hero .text-box .headline {
+        font-size: 4rem;
+    }
+
+    .cities .title {
+        font-size: 2rem;
+    }
+
+    .choose-us .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .choose-us .grid-box {
+        width: 90%;
+        margin: 3rem auto;
+    }
+    .choose-us .grid-box .left {
+        width: 100%;
+    }
+
+    .choose-us .grid-box .right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 750px) {
+    .nav-list {
+        position: absolute;
+        top: 0;
+        left: -300px;
+        height: 100vh;
+        width: 300px;
+        background: var(--dark-gray);
+        opacity: 0.95;
+        text-align: center;
+        padding: 2rem 1.5rem;
+        transition: all 1s ease;
+    }
+
+    .navbar .nav-list .nav-item {
+        display: block;
+        padding: 1rem 0;
+    }
+
+    .navbar .fas {
+        display: block;
+        color: var(--white-color);
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-align: right;
+    }
+
+    .navigation .content .search-box input[type=button] {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .navigation .content .search-box input[type=email] {
+        width: 100%;
+    }
+
+    .discount .text-box{
+        top: 30%;
+    }
+    .discount .text-box h3 {
+        font-size: 1.8rem;
+    }
+    
+    .discount .text-box p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 884px) {
+    footer .division {
+        flex-direction: column;
+    }
+
+    footer .division .copy-r {
+        padding-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 972px) {
+    .discount .text-box {
+        top: 15%;
+    }
+}
+
+@media (max-width: 990px) {
+    .choose-us .grid-box {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .choose-us .grid-box .left {
+        width: 70%;
+        margin: auto;
+    }
+
+    .choose-us .grid-box .right {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
